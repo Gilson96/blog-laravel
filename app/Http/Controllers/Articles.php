@@ -11,11 +11,11 @@ use App\Http\Requests\CommentRequest;
 
 class Articles extends Controller
 {
-    public function index()
+    public function index(Article $article)
     {
         return view("welcome", [
             // pass in all the articles
-            "articles" => Article::all(),
+            "articles" => $article::all(),
         ]);
 
     }
