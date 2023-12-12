@@ -15,7 +15,7 @@ class Articles extends Controller
     {
         return view("welcome", [
             // pass in all the articles
-            "articles" => $article::all(),
+            "articles" => Article::all(),
         ]);
 
     }
