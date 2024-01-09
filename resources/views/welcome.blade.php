@@ -4,7 +4,7 @@
 
     <div class="list-group">
         {{-- loop over all of the articles  }
-        { each article object goes into $article  --}}
+        { each article object goes into $articl --}}
         @foreach (App\Models\Article::all() as $article)
             {{-- pass-through $article as "article" --}}
 
